@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todozulo.Common", "todozulo.Common\todozulo.Common.csproj", "{FB7DD961-2CF3-4F30-A2B5-B612B1FC12D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todozulu.Functions", "todozulu.Functions\todozulu.Functions.csproj", "{E05A0E6F-F3FA-48AC-A17C-6884218AD09A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todozulu.Test", "todozulu.Test\todozulu.Test.csproj", "{8F6A5E70-4754-4A07-A1AB-32319CF45E14}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB7DD961-2CF3-4F30-A2B5-B612B1FC12D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7DD961-2CF3-4F30-A2B5-B612B1FC12D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7DD961-2CF3-4F30-A2B5-B612B1FC12D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7DD961-2CF3-4F30-A2B5-B612B1FC12D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05A0E6F-F3FA-48AC-A17C-6884218AD09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05A0E6F-F3FA-48AC-A17C-6884218AD09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05A0E6F-F3FA-48AC-A17C-6884218AD09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05A0E6F-F3FA-48AC-A17C-6884218AD09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F6A5E70-4754-4A07-A1AB-32319CF45E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6A5E70-4754-4A07-A1AB-32319CF45E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6A5E70-4754-4A07-A1AB-32319CF45E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6A5E70-4754-4A07-A1AB-32319CF45E14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
