@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todozulo.Common", "todozulo.Common\todozulo.Common.csproj", "{FB7DD961-2CF3-4F30-A2B5-B612B1FC12D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todozulo.Common", "todozulo.Common\todozulo.Common.csproj", "{FB7DD961-2CF3-4F30-A2B5-B612B1FC12D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todozulu.Functions", "todozulu.Functions\todozulu.Functions.csproj", "{E05A0E6F-F3FA-48AC-A17C-6884218AD09A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todozulu.Functions", "todozulu.Functions\todozulu.Functions.csproj", "{E05A0E6F-F3FA-48AC-A17C-6884218AD09A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "todozulu.Test", "todozulu.Test\todozulu.Test.csproj", "{8F6A5E70-4754-4A07-A1AB-32319CF45E14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "todozulu.Test", "todozulu.Test\todozulu.Test.csproj", "{8F6A5E70-4754-4A07-A1AB-32319CF45E14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
