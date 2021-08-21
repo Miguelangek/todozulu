@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
@@ -10,6 +11,8 @@ namespace todozulu.Functions.Functions
 {
     public static class ScheduledFunction
     {
+        private static IEnumerable<TodoEntity> completedTodos;
+
         [FunctionName("ScheduledFunction")]
         public static async Task Run(
            [TimerTrigger("0 * /2 * * * *")]TimerInfo myTimer,
@@ -22,9 +25,9 @@ namespace todozulu.Functions.Functions
             TableQuery<TodoEntity> query = new TableQuery<TodoEntity>().Where(filter);
             TableQuerySegment<TodoEntity> completedTodo = await todoTable.ExecuteQuerySegmentedAsync(query, null);
             int  deleted = 0;
-            foreach (TodoEntity completedTodo in completedTods)
+            foreach (TodoEntity completedTodos in completedTodos)
             {
-                await todoTable.ExecuteAsync(TableOperation.Delete(completedTodo));
+                await todoTable.ExecuteAsync(TableOperation.Delete(completedTodos));
                 deleted++;
             }
             log.LogInformation($"Deleted: {deleted} items  at: {DateTime.Now}");
