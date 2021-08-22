@@ -15,7 +15,7 @@ namespace todozulu.Test.Helpers
 {
     public class TestFactory
     {
-        private static object todoId;
+       
 
         public static TodoEntity GetTodoEntity() {
 
@@ -32,6 +32,7 @@ namespace todozulu.Test.Helpers
         
         }
 
+   
 
         public static DefaultHttpRequest CreateHttpRequest(Guid TodoId, Todo todoRequest) {
 
@@ -84,20 +85,17 @@ namespace todozulu.Test.Helpers
         }
 
 
-        public static Todo GetTodoRequest()
+        public static Todo TodoRequest => new Todo
         {
-            return new Todo
-            {
-                CreatedTime = DateTime.UtcNow,
-                IsCompleted = false, 
-                TaskDescription = "Try to conquer  the world"
-            };
-        }
+            CreatedTime = DateTime.UtcNow,
+            IsCompleted = false,
+            TaskDescription = "Try to conquer  the world"
+        };
 
 
 
 
-       public  private static Stream GenerateStreamFromString(string stringToconvert)
+        public  static Stream GenerateStreamFromString(string stringToconvert)
         {
             MemoryStream stream = new MemoryStream();
             StreamWriter write = new StreamWriter(stream);
@@ -124,6 +122,10 @@ namespace todozulu.Test.Helpers
 
             return logguer;
         
+        }
+
+        internal class GetTodoRequest : Todo
+        {
         }
     }
 }
